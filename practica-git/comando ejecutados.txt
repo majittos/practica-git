@@ -1,0 +1,379 @@
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~
+$ mkdir practica-git
+mkdir: cannot create directory ‘practica-git’: File exists
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~
+$ cd practica-git
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Majo/practica-git/.git/
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ echo -e "Buenas tardes\Soy Maria Jose\tengo 20\vivo en san juan del rio\soy TSU"> prueba.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add prueba.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   prueba.txt
+
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git commit -m "Se añadio el archivo de prueba"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Majo@DESKTOP-2AETOO5.(none)')
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git config --global user.email "mj0911.1103@gmail.com"
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git config --globa user.name "Maria Jose Martinez"
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git commit -m "Se añadio el archivo de prueba"
+[master (root-commit) 8cebb30] Se añadio el archivo de prueba
+ 1 file changed, 1 insertion(+)
+ create mode 100644 prueba.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ cd prueba.txt
+bash: cd: prueba.txt: Not a directory
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add prueba.txt
+warning: in the working copy of 'prueba.txt', LF will be replaced by CRLF the next time Git touches it
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git commit -m "Se modifico el archivo de prueba"
+[master d03e901] Se modifico el archivo de prueba
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git log
+commit d03e901988dbc3617c833152dceb1cd93aee0755 (HEAD -> master)
+Author: Maria Jose Martinez <mj0911.1103@gmail.com>
+Date:   Wed May 22 11:54:39 2024 -0600
+
+    Se modifico el archivo de prueba
+
+commit 8cebb301fd4880788f0cad35549898b1be2d64e3
+Author: Maria Jose Martinez <mj0911.1103@gmail.com>
+Date:   Wed May 22 11:44:26 2024 -0600
+
+    Se añadio el archivo de prueba
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ mkdir mensajes
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ echo -e "hola mundo"> mensaje1.txt                                            
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ echo -e "este es un mensaje"> mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ echo -e "parte de una prueba de git"> mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ echo -e "desarrollada por el profesor Alejandro"> mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ echo -e "ya son los ultimos pasos"> mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add mensajes/mensaje1.txt
+fatal: pathspec 'mensajes/mensaje1.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ cd C:\Users\Majo\practica-git
+bash: cd: C:UsersMajopractica-git: No such file or directory
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add mensajes/mensaje1.txt
+fatal: pathspec 'mensajes/mensaje1.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add mensaje1.txt
+warning: in the working copy of 'mensaje1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add mensaje1.txt/mensajes
+fatal: pathspec 'mensaje1.txt/mensajes' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ cd mensajes
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ mkdir mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ echo -e "hola mundo"> mensaje1.txt
+bash: mensaje1.txt: Is a directory
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git add mensajes/mensaje1.txt
+warning: could not open directory 'mensajes/mensajes/': No such file or directory
+fatal: pathspec 'mensajes/mensaje1.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git add mensajes/mensaje1.txt
+warning: could not open directory 'mensajes/mensajes/': No such file or directory
+fatal: pathspec 'mensajes/mensaje1.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ mkdir mensajes
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git add mensajes/mensaje1.txt
+fatal: pathspec 'mensajes/mensaje1.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git add mensajes/mensajes/mensaje1.txt
+warning: could not open directory 'mensajes/mensajes/mensajes/': No such file or directory
+fatal: pathspec 'mensajes/mensajes/mensaje1.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git commit -m "Se añadio el primer archivo de mensajes en la carpeta correspondiente"
+[master 200c9aa] Se añadio el primer archivo de mensajes en la carpeta correspondiente
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../mensaje1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git log
+commit 200c9aac4df48a691d84007214c88d4ed83c6516 (HEAD -> master)
+Author: Maria Jose Martinez <mj0911.1103@gmail.com>
+Date:   Wed May 22 12:17:40 2024 -0600
+
+    Se añadio el primer archivo de mensajes en la carpeta correspondiente
+
+commit d03e901988dbc3617c833152dceb1cd93aee0755
+Author: Maria Jose Martinez <mj0911.1103@gmail.com>
+Date:   Wed May 22 11:54:39 2024 -0600
+
+    Se modifico el archivo de prueba
+
+commit 8cebb301fd4880788f0cad35549898b1be2d64e3
+Author: Maria Jose Martinez <mj0911.1103@gmail.com>
+Date:   Wed May 22 11:44:26 2024 -0600
+
+    Se añadio el archivo de prueba
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ echo -e "hola mundo/este es un segundo mensaje/ya no se que escribir"> mensaje2.txt/mensajes
+bash: mensaje2.txt/mensajes: No such file or directory
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ echo -e "hola mundo/este es un segundo mensaje/ya no se que escribir"> mensaje2.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ git add mensajes/mensaje2.txt
+warning: could not open directory 'mensajes/mensajes/': No such file or directory
+fatal: pathspec 'mensajes/mensaje2.txt' did not match any files
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ cd..
+bash: cd..: command not found
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ cd...
+bash: cd...: command not found
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git/mensajes (master)
+$ cd
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~
+$ cd practica-git
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git add mensajes/mensaje2.txt
+warning: in the working copy of 'mensajes/mensaje2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git commit -m "Se añadió el segundo archivo de mensajes"
+[master 505ca56] Se añadió el segundo archivo de mensajes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mensajes/mensaje2.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    mensaje1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mensajes/mensaje1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git branch creditos
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (master)
+$ git checkout creditos
+Switched to branch 'creditos'
+D       mensaje1.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$ echo -e "Maria Jose Martinez Cayetano, 20 años, san juanense, estudiante"> creditos.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$ git add creditos.txt
+warning: in the working copy of 'creditos.txt', LF will be replaced by CRLF the next time Git touches it
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$ git commit -m "Se añadieron creditos"
+[creditos 45848bc] Se añadieron creditos
+ 1 file changed, 1 insertion(+)
+ create mode 100644 creditos.txt
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$ git merge master
+Already up to date.
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$ ^C
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$ git status
+On branch creditos
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    mensaje1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mensajes/mensaje1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Majo@DESKTOP-2AETOO5 MINGW32 ~/practica-git (creditos)
+$
